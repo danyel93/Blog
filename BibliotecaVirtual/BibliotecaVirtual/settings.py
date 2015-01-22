@@ -26,8 +26,8 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-from unipath import Path
-RUTA_PROYECTO= Path(__file__).ancestor(2)
+from unipath import Path,AbstractPath
+RUTA_PROYECTO= Path.cwd()
 
 
 ALLOWED_HOSTS = []
